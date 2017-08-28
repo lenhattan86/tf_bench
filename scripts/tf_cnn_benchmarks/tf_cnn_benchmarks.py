@@ -95,7 +95,8 @@ tf.flags.DEFINE_string('local_parameter_device', 'gpu',
                           of variables happens.""")
 tf.flags.DEFINE_string('device', 'gpu',
                        """Device to use for computation: cpu or gpu""")
-tf.flags.DEFINE_string('data_format', 'NCHW',
+#tf.flags.DEFINE_string('data_format', 'NCHW',
+tf.flags.DEFINE_string('data_format', 'NHWC',
                        """Data layout to use: NHWC (TF native)
                        or NCHW (cuDNN native).""")
 tf.flags.DEFINE_integer('num_intra_threads', 1,
