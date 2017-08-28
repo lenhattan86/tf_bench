@@ -257,7 +257,8 @@ class ConvNetBuilder(object):
                input_op,
                input_nchan,
                phase_train,
-               data_format='NCHW',
+#               data_format='NCHW',
+               data_format='NHWC', 
                data_type=tf.float32):
     self.top_layer = input_op
     self.top_size = input_nchan
