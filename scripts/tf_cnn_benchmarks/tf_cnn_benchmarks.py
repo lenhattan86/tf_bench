@@ -240,6 +240,7 @@ class GlobalStepWatcher(threading.Thread):
             global_step_val, time.ctime()))
         self.finish_time = time.time()
         self.finish_step = global_step_val
+        log_fn('total time %s' % (self.finish_time - self.start_time))
 
   def done(self):
     return self.finish_time > 0
